@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "home": "Home",
+    "booking": "Book Slot",
+    "alerts": "Alerts",
+    "lostFound": "Lost & Found",
+    "admin": "Admin",
+    "language": "हिंदी"
+  },
+  "home": {
+    "title": "ShipraSetu – Sacred Journey Management for Simhastha 2028",
+    "subtitle": "Divine pilgrimage experience with digital darshan booking and real-time spiritual guidance",
+    "bookSlot": "Book Ghat Slot",
+    "viewAlerts": "View Alerts",
+    "reportLostFound": "Report Lost or Found",
+    "adminLogin": "Admin Login",
+    "features": {
+      "title": "Sacred Features",
+      "booking": {
+        "title": "Divine Booking",
+        "desc": "Reserve your sacred bathing time in advance"
+      },
+      "alerts": {
+        "title": "Live Updates",
+        "desc": "Stay informed with real-time spiritual guidance"
+      },
+      "lostFound": {
+        "title": "Lost & Found",
+        "desc": "Reunite with lost belongings and loved ones"
+      }
+    },
+    "routeGuidance": {
+      "title": "Real-Time Route Guidance",
+      "subtitle": "Navigate the sacred paths with divine assistance",
+      "mapTitle": "Sacred Route Map",
+      "recommendations": "Divine Recommendations",
+      "routes": {
+        "recommended": "Recommended Path: Route A via Nanakheda Gate",
+        "avoid": "Avoid Triveni Ghat – overcrowded",
+        "alternative": "Alternative: Take Route B through Dada Nagar Ghat",
+        "blessing": "Best time for darshan: Early morning (5-7 AM)"
+      },
+      "legend": {
+        "low": "Low Crowd - Peaceful Path",
+        "moderate": "Moderate Crowd - Steady Flow",
+        "high": "High Crowd - Patience Required"
+      }
+    }
+  },
+  "booking": {
+    "title": "Book Sacred Ghat Slot",
+    "name": "Full Name",
+    "age": "Age",
+    "gender": "Gender",
+    "male": "Male",
+    "female": "Female",
+    "other": "Other",
+    "ghat": "Select Sacred Ghat",
+    "date": "Select Date",
+    "timeSlot": "Select Time Slot",
+    "submit": "Book Sacred Slot",
+    "available": "Available",
+    "unavailable": "Unavailable"
+  },
+  "confirmation": {
+    "title": "Sacred Booking Confirmed",
+    "tokenId": "Token ID",
+    "pilgrimName": "Pilgrim Name",
+    "ghat": "Sacred Ghat",
+    "date": "Date",
+    "time": "Time",
+    "download": "Download Token",
+    "important": "Important: Please arrive 15 minutes before your scheduled darshan time"
+  },
+  "alerts": {
+    "title": "Simhastha Live Updates",
+    "addAlert": "Add New Update",
+    "alertText": "Update Message",
+    "priority": "Priority",
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low",
+    "post": "Post Update"
+  },
+  "lostFound": {
+    "title": "Lost & Found",
+    "reportLost": "Report Lost",
+    "reportFound": "Report Found",
+    "name": "Name",
+    "age": "Age",
+    "gender": "Gender",
+    "lastSeen": "Last Seen Location",
+    "description": "Description",
+    "photo": "Upload Photo (Optional)",
+    "submit": "Submit Report",
+    "search": "Search reports...",
+    "filter": "Filter by type"
+  },
+  "admin": {
+    "title": "Admin Dashboard",
+    "login": "Admin Login",
+    "username": "Username",
+    "password": "Password",
+    "bookings": "Live Bookings",
+    "manageAlerts": "Manage Updates",
+    "moderateReports": "Moderate Reports",
+    "verify": "Verify",
+    "delete": "Delete"
+  }
+}

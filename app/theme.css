@@ -1,0 +1,309 @@
+/* remove @layer base usage to satisfy Tailwind/PostCSS on build; keep variables and utilities as plain CSS */
+
+/* Sacred theme and utilities (no @layer usage) */
+:root {
+  --background: 0 0% 100%;
+  --foreground: 20 14.3% 4.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 14.3% 4.1%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 14.3% 4.1%;
+  --primary: 24 9.8% 10%;
+  --primary-foreground: 60 9.1% 97.8%;
+  --secondary: 60 4.8% 95.9%;
+  --secondary-foreground: 24 9.8% 10%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --accent: 60 4.8% 95.9%;
+  --accent-foreground: 24 9.8% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --ring: 20 14.3% 4.1%;
+  --radius: 0.75rem;
+
+  /* Sacred palette */
+  --saffron: 25 95% 53%;
+  --deep-saffron: 25 100% 35%;
+  --maroon: 0 100% 25%;
+  --sandalwood: 35 25% 75%;
+  --sacred-gold: 45 100% 51%;
+  --temple-red: 0 65% 45%;
+  --divine-orange: 20 90% 55%;
+}
+
+/* ensure borders use the design token */
+* {
+  border-color: hsl(var(--border));
+}
+
+.spiritual-gradient {
+  background: linear-gradient(135deg, #fff7ed 0%, #fed7aa 25%, #fb923c 50%, #ea580c 75%, #9a3412 100%);
+}
+
+.sacred-card {
+  @apply bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50 backdrop-blur-sm border border-orange-200/50 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300;
+  background-image: radial-gradient(circle at 20% 80%, rgba(251, 146, 60, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(234, 88, 12, 0.1) 0%, transparent 50%);
+}
+
+.mandala-pattern {
+  background-image: radial-gradient(circle at 25% 25%, rgba(251, 146, 60, 0.1) 0%, transparent 25%),
+    radial-gradient(circle at 75% 75%, rgba(234, 88, 12, 0.1) 0%, transparent 25%);
+}
+
+.route-grid {
+  background-image: linear-gradient(rgba(251, 146, 60, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(251, 146, 60, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.kalash-icon {
+  filter: drop-shadow(0 2px 4px rgba(234, 88, 12, 0.2));
+}
+
+.divine-text {
+  background: linear-gradient(135deg, #b55300, #ea580c, #fb923c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.deep-saffron-text {
+  color: #b55300;
+}
+
+/* Sacred Features Heading - Enhanced Golden Style */
+.sacred-features-heading {
+  color: #ffd700;
+  text-shadow: 1px 1px 5px rgba(255, 140, 0, 0.6), 0 0 10px rgba(255, 215, 0, 0.3);
+  font-weight: bold;
+  font-size: 2rem;
+  position: relative;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  .sacred-features-heading {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .sacred-features-heading {
+    font-size: 3rem;
+  }
+}
+
+.sacred-features-heading::before,
+.sacred-features-heading::after {
+  content: "✦";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffd700;
+  font-size: 1rem;
+  opacity: 0.7;
+  animation: sparkle 2s ease-in-out infinite alternate;
+}
+.sacred-features-heading::before {
+  left: -2rem;
+}
+.sacred-features-heading::after {
+  right: -2rem;
+}
+
+@keyframes sparkle {
+  0% {
+    opacity: 0.4;
+    transform: translateY(-50%) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.2);
+  }
+}
+
+/* Mandala Separator */
+.mandala-separator {
+  animation: gentle-pulse 3s ease-in-out infinite;
+}
+@keyframes gentle-pulse {
+  0%,
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+/* Diya Icons */
+.diya-icon {
+  position: fixed;
+  z-index: 10;
+  animation: diya-glow 2s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+.diya-top-left {
+  top: 20px;
+  left: 20px;
+}
+.diya-top-right {
+  top: 20px;
+  right: 20px;
+}
+.diya-bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+.diya-bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
+@keyframes diya-glow {
+  0% {
+    filter: drop-shadow(0 0 5px rgba(255, 140, 0, 0.6)) drop-shadow(0 0 10px rgba(255, 215, 0, 0.4));
+    transform: scale(1);
+  }
+  100% {
+    filter: drop-shadow(0 0 8px rgba(255, 140, 0, 0.8)) drop-shadow(0 0 15px rgba(255, 215, 0, 0.6));
+    transform: scale(1.1);
+  }
+}
+
+/* Ripple Animation Background */
+.ripple-background {
+  position: relative;
+  overflow: hidden;
+}
+.ripple-background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 70%, rgba(255, 140, 0, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 70% 30%, rgba(255, 215, 0, 0.1) 0%, transparent 50%);
+  animation: ripple-wave 6s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+.ripple-background > * {
+  position: relative;
+  z-index: 2;
+}
+@keyframes ripple-wave {
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.1) rotate(2deg);
+    opacity: 0.5;
+  }
+}
+
+/* Sacred Section Separators */
+.sacred-separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0;
+  position: relative;
+}
+.sacred-separator::before,
+.sacred-separator::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(255, 140, 0, 0.3), transparent);
+}
+.sacred-separator-icon {
+  margin: 0 1rem;
+  color: #ffd700;
+  font-size: 1.5rem;
+  animation: rotate-gentle 8s linear infinite;
+}
+@keyframes rotate-gentle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sacred-button {
+  @apply bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-500 hover:from-orange-600 hover:via-amber-600 hover:to-yellow-600 text-white font-medium shadow-lg hover:shadow-xl transition-all duration-300;
+  background-size: 200% 200%;
+  animation: shimmer 3s ease-in-out infinite;
+}
+@keyframes shimmer {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.river-pattern {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(251, 146, 60, 0.05) 10px,
+    rgba(251, 146, 60, 0.05) 20px
+  );
+}
+
+/* Enhanced Sacred Cards with Warm Glow */
+.ghat-card {
+  @apply bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50 backdrop-blur-sm border border-orange-200/50 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300;
+  background-image: radial-gradient(circle at 20% 80%, rgba(251, 146, 60, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(234, 88, 12, 0.1) 0%, transparent 50%);
+  position: relative;
+}
+.ghat-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.3), rgba(255, 140, 0, 0.2), rgba(255, 215, 0, 0.3));
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  pointer-events: none;
+}
+
+/* Toast notification styles */
+.toast-success {
+  @apply bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg shadow-lg;
+}
+.toast-error {
+  @apply bg-red-100   border border-red-400   text-red-700   px-4 py-3 rounded-lg shadow-lg;
+}
+.toast-info {
+  @apply bg-blue-100  border border-blue-400  text-blue-700  px-4 py-3 rounded-lg shadow-lg;
+}
+
+/* Warm Sacred Ambiance */
+.sacred-ambiance {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 248, 237, 0.9) 0%,
+    rgba(254, 215, 170, 0.8) 25%,
+    rgba(251, 146, 60, 0.7) 50%,
+    rgba(234, 88, 12, 0.8) 75%,
+    rgba(154, 52, 18, 0.9) 100%
+  );
+}
+
+/* Lotus Pattern Background */
+.lotus-pattern {
+  background-image: radial-gradient(circle at 20% 20%, rgba(255, 215, 0, 0.1) 0%, transparent 30%),
+    radial-gradient(circle at 80% 80%, rgba(255, 140, 0, 0.1) 0%, transparent 30%),
+    radial-gradient(circle at 40% 60%, rgba(255, 215, 0, 0.05) 0%, transparent 40%);
+}
