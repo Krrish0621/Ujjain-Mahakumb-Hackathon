@@ -30,9 +30,16 @@ Tailwind CSS – Utility-first CSS framework
 
 Vercel – Deployment and hosting
 
-## Folder Structure
-
-<pre lang="md"><code>## Folder Structure ```bash . ├── app/ # App Router structure │ ├── [lang]/ # Language-based routing (e.g., en, hi) │ └── layout.tsx # Root layout ├── components/ # Reusable UI components ├── lib/ # Utility functions ├── public/ # Static assets ├── styles/ # Global styles └── i18n/ # Translation JSON files (e.g., en.json, hi.json) ``` </code></pre>
+# 📂 Folder Structure
+shiprasetu/
+├── app/ # App Router structure
+│ ├── [lang]/ # Language-based routing (e.g., en, hi)
+│ └── layout.tsx # Root layout
+├── components/ # Reusable UI components
+├── lib/ # Utility functions
+├── public/ # Static assets
+├── styles/ # Global styles
+└── i18n/ # Translation JSON files (e.g., en.json, hi.json)
 
 ## How to Run Locally
 
