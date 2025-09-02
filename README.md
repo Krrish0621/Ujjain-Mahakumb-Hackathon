@@ -30,16 +30,16 @@ Tailwind CSS – Utility-first CSS framework
 
 Vercel – Deployment and hosting
 
-Folder Structure
-├── app/                # App Router structure
-│   ├── [lang]/         # Language-based routing (e.g. en, hi)
-│   └── layout.tsx      # Root layout
-├── components/         # Reusable UI components
-├── lib/                # Utility functions
-├── public/             # Static assets
-├── styles/             # Global styles
-└── i18n/               # Translation JSON files (e.g., en.json, hi.json)
+## Folder Structure
 
+app/ # App Router structure
+├── [lang]/ # Language-based routing (e.g. en, hi)
+├── layout.tsx # Root layout
+components/ # Reusable UI components
+lib/ # Utility functions
+public/ # Static assets
+styles/ # Global styles
+i18n/ # Translation JSON files (e.g., en.json, hi.json)
 How to Run Locally
 # Clone the repo
 git clone [https://github.com/Krrish0621/ Ujjain-Mahakumb-Hackathon.git](https://github.com/Krrish0621/Ujjain-Mahakumb-Hackathon.git)
