@@ -18,7 +18,7 @@ Features
 Live Demo
 
 Visit the live website here:
-🔗 https://tinyurl.com/ShipraSetu
+🔗 [https://tinyurl.com/ShipraSetu](https://tinyurl.com/ShipraSetu)
 
 Tech Stack
 
@@ -42,7 +42,7 @@ Folder Structure
 
 How to Run Locally
 # Clone the repo
-git clone https://github.com/Krrish0621/ Ujjain-Mahakumb-Hackathon.git
+git clone [https://github.com/Krrish0621/ Ujjain-Mahakumb-Hackathon.git](https://github.com/Krrish0621/Ujjain-Mahakumb-Hackathon.git)
 
 # Navigate into the directory
 cd Ujjain-Mahakumb-Hackathon
