@@ -1,30 +1,54 @@
-# Ghatline multilingual website
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+ShipraSetu – Multilingual Website
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/krrish0621s-projects/v0-ghatline-multilingual-website)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/I38La8Wfeux)
+Overview
 
-## Overview
+ShipraSetu is a multilingual web application designed to provide real-time guidance and support to pilgrims, with seamless language switching through dynamic internationalization (i18n). The platform is optimized for responsiveness, accessibility, and user-friendliness.
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+Features
 
-## Deployment
+🌐 Supports multiple languages using dynamic i18n routing
 
-Your project is live at:
+📱 Mobile-friendly and responsive UI
 
-**[https://vercel.com/krrish0621s-projects/v0-ghatline-multilingual-website](https://vercel.com/krrish0621s-projects/v0-ghatline-multilingual-website)**
+🧩 Modular components and scalable architecture
 
-## Build your app
+🚀 Fast deployment and performance
 
-Continue building your app on:
+Live Demo
 
-**[https://v0.app/chat/projects/I38La8Wfeux](https://v0.app/chat/projects/I38La8Wfeux)**
+Visit the live website here:
+🔗 https://tinyurl.com/ShipraSetu
 
-## How It Works
+Tech Stack
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+Next.js – React-based framework with App Router
+
+TypeScript – Strongly typed JavaScript
+
+Tailwind CSS – Utility-first CSS framework
+
+Vercel – Deployment and hosting
+
+Folder Structure
+├── app/                # App Router structure
+│   ├── [lang]/         # Language-based routing (e.g. en, hi)
+│   └── layout.tsx      # Root layout
+├── components/         # Reusable UI components
+├── lib/                # Utility functions
+├── public/             # Static assets
+├── styles/             # Global styles
+└── i18n/               # Translation JSON files (e.g., en.json, hi.json)
+
+How to Run Locally
+# Clone the repo
+git clone https://github.com/Krrish0621/ Ujjain-Mahakumb-Hackathon.git
+
+# Navigate into the directory
+cd Ujjain-Mahakumb-Hackathon
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
