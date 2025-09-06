@@ -8,9 +8,9 @@ import "./theme.css"
 import { Suspense } from "react"
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
-  generator: "v0.app",
+  title: "ShipraSetu",
+  description: "Ujjain Mahakumb Hackathon",
+  generator: "Node.js",
 }
 
 export default function RootLayout({
